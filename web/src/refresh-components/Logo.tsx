@@ -49,11 +49,12 @@ export default function Logo({ folded, className }: LogoProps) {
       </div>
       {!NEXT_PUBLIC_DO_NOT_USE_TOGGLE_OFF_DANSWER_POWERED && (
         <Text secondaryBody text03 className="ml-[33px]">
-          Powered by Onyx
+          Powered by TOOT
         </Text>
       )}
     </div>
   ) : (
-    <OnyxLogoTypeIcon size={88} className={className} />
+    // Replace default Onyx logotype with custom text "TOOT"
+    <Text headingH3 className={className}>TOOT</Text>
   );
 }
