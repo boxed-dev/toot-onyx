@@ -32,7 +32,7 @@ import Button from "@/refresh-components/buttons/Button";
 import SvgRefreshCw from "@/icons/refresh-cw";
 import SvgEdit from "@/icons/edit";
 
-const API_KEY_TEXT = `API Keys allow you to access Onyx APIs programmatically. Click the button below to generate a new API Key.`;
+const API_KEY_TEXT = `API Keys allow you to access Toot APIs programmatically. Click the button below to generate a new API Key.`;
 
 function NewApiKeyModal({
   apiKey,

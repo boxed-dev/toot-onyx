@@ -537,7 +537,7 @@ export function UserSettings({ onClose }: UserSettingsProps) {
                 onChange={(event) =>
                   updatePersonalizationField("name", event.target.value)
                 }
-                placeholder="Set how Onyx should refer to you"
+                placeholder="Set how Toot should refer to you"
                 className="mt-2"
               />
             </div>
@@ -556,7 +556,7 @@ export function UserSettings({ onClose }: UserSettingsProps) {
               <div>
                 <h3 className="text-lg font-medium">Use memories</h3>
                 <SubLabel>
-                  Allow Onyx to reference stored memories in future chats.
+                  Allow Toot to reference stored memories in future chats.
                 </SubLabel>
               </div>
               <Switch
@@ -586,7 +586,7 @@ export function UserSettings({ onClose }: UserSettingsProps) {
                     <AutoResizeTextarea
                       key={index}
                       value={memory}
-                      placeholder="Write something Onyx should remember"
+                      placeholder="Write something Toot should remember"
                       onChange={(value) => updateMemoryAtIndex(index, value)}
                     />
                   ))}

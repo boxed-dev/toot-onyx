@@ -7,7 +7,7 @@ export default function CloudError() {
       <Text headingH2>Maintenance in Progress</Text>
 
       <Text text03>
-        Onyx is currently in a maintenance window. Please check back in a couple
+        Toot is currently in a maintenance window. Please check back in a couple
         of minutes.
       </Text>
 
