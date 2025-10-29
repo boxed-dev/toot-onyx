@@ -58,7 +58,7 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 
   return {
-    title: enterpriseSettings?.application_name || "Toot",
+    title: enterpriseSettings?.application_name || "AutoLMS",
     description: "Question answering for your documents",
     icons: {
       icon: logoLocation,

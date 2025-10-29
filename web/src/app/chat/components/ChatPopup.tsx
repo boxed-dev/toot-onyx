@@ -34,7 +34,7 @@ export function ChatPopup() {
     enterpriseSettings?.custom_popup_header ||
     (isConsentScreen
       ? "Terms of Use"
-      : `Welcome to ${enterpriseSettings?.application_name || "Toot"}!`);
+      : `Welcome to ${enterpriseSettings?.application_name || "AutoLMS"}!`);
 
   const popupContent =
     enterpriseSettings?.custom_popup_content ||

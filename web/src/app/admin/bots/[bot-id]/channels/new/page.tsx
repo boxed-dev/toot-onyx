@@ -57,7 +57,7 @@ async function NewChannelConfigPage(props: {
       <BackButton />
       <AdminPageTitle
         icon={<SourceIcon iconSize={32} sourceType={ValidSources.Slack} />}
-        title="Configure TootBot for Slack Channel"
+        title="Configure AutoLMSBot for Slack Channel"
       />
 
       <SlackChannelConfigCreationForm

@@ -37,21 +37,21 @@ const Main = () => {
       {/* {popup} */}
 
       <p className="mb-2 text-sm text-muted-foreground">
-        Setup Slack bots that connect to Toot. Once setup, you will be able to
-        ask questions to Toot directly from Slack. Additionally, you can:
+        Setup Slack bots that connect to AutoLMS. Once setup, you will be able to
+        ask questions to AutoLMS directly from Slack. Additionally, you can:
       </p>
 
       <div className="mb-2">
         <ul className="list-disc mt-2 ml-4 text-sm text-muted-foreground">
           <li>
-            Setup TootBot to automatically answer questions in certain channels.
+            Setup AutoLMSBot to automatically answer questions in certain channels.
           </li>
           <li>
-            Choose which document sets TootBot should answer from, depending on
+            Choose which document sets AutoLMSBot should answer from, depending on
             the channel the question is being asked.
           </li>
           <li>
-            Directly message TootBot to search just as you would in the web UI.
+            Directly message AutoLMSBot to search just as you would in the web UI.
           </li>
         </ul>
       </div>
@@ -66,7 +66,7 @@ const Main = () => {
         >
           guide{" "}
         </a>
-        found in the Toot documentation to get started!
+        found in the AutoLMS documentation to get started!
       </p>
 
       <CreateButton href="/admin/bots/new">New Slack Bot</CreateButton>

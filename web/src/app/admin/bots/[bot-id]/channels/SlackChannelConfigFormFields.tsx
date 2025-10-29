@@ -187,9 +187,9 @@ export function SlackChannelConfigFormFields({
                 labelClassName="text-text"
               />
               <p className="mt-2 text-sm italic">
-                Warning: Disabling the default configuration means TootBot
+                Warning: Disabling the default configuration means AutoLMSBot
                 won&apos;t respond in Slack channels unless they are explicitly
-                configured. Additionally, TootBot will not respond to DMs.
+                configured. Additionally, AutoLMSBot will not respond to DMs.
               </p>
             </div>
           </>
@@ -217,7 +217,7 @@ export function SlackChannelConfigFormFields({
               value="all_public"
               id="all_public"
               label="All Public Knowledge"
-              sublabel="Let TootBot respond based on information from all public connectors"
+              sublabel="Let AutoLMSBot respond based on information from all public connectors"
             />
             {selectableSets.length + unselectableSets.length > 0 && (
               <RadioGroupItemField
@@ -246,7 +246,7 @@ export function SlackChannelConfigFormFields({
             <div className="mt-4">
               <SubLabel>
                 <>
-                  Select the document sets TootBot will use while answering
+                  Select the document sets AutoLMSBot will use while answering
                   questions in Slack.
                   <br />
                   {unselectableSets.length > 0 ? (
@@ -315,7 +315,7 @@ export function SlackChannelConfigFormFields({
                               key={documentSet.id}
                               documentSet={documentSet}
                               disabled
-                              disabledTooltip="Unable to use this document set because it contains a connector with auto-sync permissions. TootBot's responses in this channel are visible to all Slack users, so mirroring the asker's permissions could inadvertently expose private information."
+                              disabledTooltip="Unable to use this document set because it contains a connector with auto-sync permissions. AutoLMSBot's responses in this channel are visible to all Slack users, so mirroring the asker's permissions could inadvertently expose private information."
                               isSelected={false}
                               onSelect={() => {}}
                             />
@@ -337,7 +337,7 @@ export function SlackChannelConfigFormFields({
           <div className="mt-4">
             <SubLabel>
               <>
-                Select the search-enabled assistant TootBot will use while
+                Select the search-enabled assistant AutoLMSBot will use while
                 answering questions in Slack.
                 {syncEnabledAssistants.length > 0 && (
                   <>
@@ -404,7 +404,7 @@ export function SlackChannelConfigFormFields({
           <div className="mt-4">
             <SubLabel>
               <>
-                Select the non-search assistant TootBot will use while answering
+                Select the non-search assistant AutoLMSBot will use while answering
                 questions in Slack.
                 {syncEnabledAssistants.length > 0 && (
                   <>
@@ -457,7 +457,7 @@ export function SlackChannelConfigFormFields({
                   <SelectorFormField
                     name="response_type"
                     label="Answer Type"
-                    tooltip="Controls the format of TootBot's responses."
+                    tooltip="Controls the format of AutoLMSBot's responses."
                     options={[
                       { name: "Standard", value: "citations" },
                       { name: "Detailed", value: "quotes" },
@@ -487,7 +487,7 @@ export function SlackChannelConfigFormFields({
               <CheckFormField
                 name="show_continue_in_web_ui"
                 label="Show Continue in Web UI button"
-                tooltip="If set, will show a button at the bottom of the response that allows the user to continue the conversation in the Toot Web UI"
+                tooltip="If set, will show a button at the bottom of the response that allows the user to continue the conversation in the AutoLMS Web UI"
               />
 
               <CheckFormField
@@ -499,7 +499,7 @@ export function SlackChannelConfigFormFields({
                   }
                 }}
                 label={'Give a "Still need help?" button'}
-                tooltip={`TootBot's response will include a button at the bottom
+                tooltip={`AutoLMSBot's response will include a button at the bottom
                       of the response that asks the user if they still need help.`}
               />
               {values.still_need_help_enabled && (
@@ -524,22 +524,22 @@ export function SlackChannelConfigFormFields({
               <CheckFormField
                 name="questionmark_prefilter_enabled"
                 label="Only respond to questions"
-                tooltip="If set, TootBot will only respond to messages that contain a question mark"
+                tooltip="If set, AutoLMSBot will only respond to messages that contain a question mark"
               />
               <CheckFormField
                 name="respond_tag_only"
-                label="Respond to @TootBot Only"
-                tooltip="If set, TootBot will only respond when directly tagged"
+                label="Respond to @AutoLMSBot Only"
+                tooltip="If set, AutoLMSBot will only respond when directly tagged"
               />
               <CheckFormField
                 name="respond_to_bots"
                 label="Respond to Bot messages"
-                tooltip="If not set, TootBot will always ignore messages from Bots"
+                tooltip="If not set, AutoLMSBot will always ignore messages from Bots"
               />
               <CheckFormField
                 name="is_ephemeral"
                 label="Respond to user in a private (ephemeral) message"
-                tooltip="If set, TootBot will respond only to the user in a private (ephemeral) message. If you also
+                tooltip="If set, AutoLMSBot will respond only to the user in a private (ephemeral) message. If you also
                 chose 'Search' Assistant above, selecting this option will make documents that are private to the user
                 available for their queries."
               />
@@ -548,7 +548,7 @@ export function SlackChannelConfigFormFields({
                 name="respond_member_group_list"
                 label="(Optional) Respond to Certain Users / Groups"
                 subtext={
-                  "If specified, TootBot responses will only " +
+                  "If specified, AutoLMSBot responses will only " +
                   "be visible to the members or groups in this list."
                 }
                 values={values}

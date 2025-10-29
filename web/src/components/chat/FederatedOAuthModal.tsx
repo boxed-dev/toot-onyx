@@ -144,7 +144,7 @@ export function FederatedOAuthModal() {
   };
 
   const applicationName =
-    settings?.enterpriseSettings?.application_name || "Toot";
+    settings?.enterpriseSettings?.application_name || "AutoLMS";
 
   if (skipCount >= MAX_SKIP_COUNT) {
     return (

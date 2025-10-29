@@ -284,7 +284,7 @@ const AdvancedEmbeddingFormPage = forwardRef<
               <BooleanFormField
                 subtext={
                   NEXT_PUBLIC_CLOUD_ENABLED
-                    ? "Contextual RAG disabled in Toot Cloud"
+                    ? "Contextual RAG disabled in AutoLMS Cloud"
                     : "Enable contextual RAG for all chunk sizes."
                 }
                 optional

@@ -10,7 +10,7 @@ export default function LoginText() {
     <div className="w-full flex flex-col items-center justify-center">
       <Text headingH3>
         Log In to{" "}
-        {(settings && settings?.enterpriseSettings?.application_name) || "TOOT"}
+        {(settings && settings?.enterpriseSettings?.application_name) || "AutoLMS"}
       </Text>
     </div>
   );

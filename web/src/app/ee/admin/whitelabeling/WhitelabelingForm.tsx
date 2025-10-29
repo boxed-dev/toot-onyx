@@ -140,8 +140,8 @@ export function WhitelabelingForm() {
             <TextFormField
               label="Application Name"
               name="application_name"
-              subtext={`The custom name you are giving Toot for your team. This will replace 'Toot' everywhere in the UI.`}
-              placeholder="Custom name which will replace 'Toot'"
+              subtext={`The custom name you are giving AutoLMS for your team. This will replace 'AutoLMS' everywhere in the UI.`}
+              placeholder="Custom name which will replace 'AutoLMS'"
               disabled={isSubmitting}
             />
             <div>
@@ -180,7 +180,7 @@ export function WhitelabelingForm() {
                 </div>
               ) : (
                 <SubLabel>
-                  Specify your own logo to replace the standard Toot logo.
+                  Specify your own logo to replace the standard AutoLMS logo.
                 </SubLabel>
               )}
 
@@ -239,7 +239,7 @@ export function WhitelabelingForm() {
                     values.enable_consent_screen
                       ? `The title for the consent screen that will be displayed for each user on their initial visit to the application. If left blank, title will default to "Terms of Use".`
                       : `The title for the popup that will be displayed for each user on their initial visit to the application. If left blank AND Custom Popup Content is specified, will use "Welcome to ${
-                          values.application_name || "Toot"
+                          values.application_name || "AutoLMS"
                         }!".`
                   }
                   placeholder={

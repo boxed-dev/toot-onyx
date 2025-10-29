@@ -224,7 +224,7 @@ export const SlackChannelConfigCreationForm = ({
             setPopup({
               message: `Error ${
                 isUpdate ? "updating" : "creating"
-              } TootBot config - ${errorMsg}`,
+              } AutoLMSBot config - ${errorMsg}`,
               type: "error",
             });
           }

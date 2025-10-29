@@ -115,7 +115,7 @@ export const SettingsPanel = ({
         <SidebarSwitch
           checked={useOnyxAsNewTab}
           onCheckedChange={handleUseOnyxToggle}
-          label="Use Toot as new tab page"
+          label="Use AutoLMS as new tab page"
         />
 
         <SidebarSwitch

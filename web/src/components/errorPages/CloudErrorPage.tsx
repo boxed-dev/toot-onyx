@@ -7,7 +7,7 @@ export default function CloudError() {
       <Text headingH2>Maintenance in Progress</Text>
 
       <Text text03>
-        Toot is currently in a maintenance window. Please check back in a couple
+        AutoLMS is currently in a maintenance window. Please check back in a couple
         of minutes.
       </Text>
 

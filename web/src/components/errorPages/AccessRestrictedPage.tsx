@@ -92,12 +92,12 @@ export default function AccessRestricted() {
       </div>
 
       <Text text03>
-        We regret to inform you that your access to Toot has been temporarily
+        We regret to inform you that your access to AutoLMS has been temporarily
         suspended due to a lapse in your subscription.
       </Text>
 
       <Text text03>
-        To reinstate your access and continue benefiting from Toot&apos;s
+        To reinstate your access and continue benefiting from AutoLMS&apos;s
         powerful features, please update your payment information.
       </Text>
 
